@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bat ball stamp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="continer">
+  
+</div>
+  <div class="continer">
+  <div class="game_part">
+    <p class="game">BAT BALL STAM GAME</p>
+    <button class="bat" onclick=" 
+    genarateComputerChoice();
+   let finalResult = result('bat',computerChoice);
+    
+   showResult('bat',computerChoice,finalResult);
+   
+  ">.</button>
+
+  
+    <button class="ball" onclick="
+    genarateComputerChoice();
+   
+    let finalResult =result('ball',computerChoice);
+    
+    showResult('ball',computerChoice,finalResult);
+  
+   
+  ">.</button>
+    <button class="stamp" onclick="
+   genarateComputerChoice();
+  
+   let finalResult =result('stamp',computerChoice);
+    
+   showResult('stamp',computerChoice,finalResult);
+  ">.</button>
+
+  <button class="reset" onclick="
+  localStorage.clear();
+  resetScore();
+  showResult();
+  ">reset</button>
+
+<div class="display continer">
+  <h3 class="usrchoice"></h3>
+<h3 class="compchoice"></h3>
+<h3 class="finalRslt"></h3>
+<h3 class="score"></h3>
+</div>
+
+
+
+
+
+  </div>
+  <div class="noteis">
+    <div class="contain">
+    <div>
+    <button>Ball</button>
+    <button>bat</button>
+    <h2>Bat won</h2>
+    </div>
+   <div>
+    <button>Ball</button>
+    <button>stamp</button>
+    <h2>ball won</h2>
+   </div>
+   <div>
+    <button>bat </button>
+    <button>stamp</button>
+    <h2>stamp won</h2>
+   </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/criket.js"></script>
+
+</body>
+</html>

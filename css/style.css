@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  
+}
+.continer{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+ 
+
+}
+.game{
+  margin-bottom: 40px;
+  font-size: 30px;
+  border-bottom: 2px solid #bbb;
+}
+.game_part{
+  width: 55%;
+  background: #9fd8df;
+  padding:50px 0 100px;
+  text-align: center;
+}
+button{
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 0 5px 0;
+  text-align: center;
+  margin:0 35px;
+  border: 2px solid #353434;
+
+}
+.bat{
+  background: url('../images/bat.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.ball{
+  background: url('../images/ball.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stamp{
+  background: url('../images/stump.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.noteis{
+  width: 45%;
+  background: #a1abc1;
+}
+.reset{
+  width: 10%;
+  height: 25px;;
+  background: #a1abc1;
+  margin: auto;
+  margin-top:20px ;
+  display: block;
+}
+
+.contain{
+
+}
+.contain button{
+  height: 45px;
+  width: 80px;
+  border-radius: 15%;
+  text-align: center;
+  margin: 15px 2px;
+  font-size: 12px;
+}
+
+@media(max-width:768px){
+  .continer{
+    width: 100%;
+    display: block;
+
+   
+  
+  }
+  .game_part{
+    width: 100%;
+    background: #9fd8df;
+    padding:100px 0;
+  }
+  .noteis{
+    width: 100%;
+    background: #a1abc1;
+  }
+}
+
+.display{
+  display: block;
+  margin: auto;
+  height:80%;
+  width:80%;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  line-height: 50px;
+
+h3{
+  text-transform: uppercase;
+}
+.score{
+  font-size: 13px;
+}
